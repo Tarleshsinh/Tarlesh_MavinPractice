@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/selenium-server-4.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/webdrivermanager-5.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/bcpkix-jdk15on-1.64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/bcprov-jdk15on-1.64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/commons-compress-1.21.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/commons-lang3-3.12.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/dec-0.1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/docker-java-3.2.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/docker-java-api-3.2.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/docker-java-core-3.2.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/docker-java-transport-3.2.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/docker-java-transport-httpclient5-3.2.13.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/gson-2.9.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/guava-19.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/httpclient5-5.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/httpcore5-5.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/httpcore5-h2-5.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/jackson-annotations-2.10.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/jackson-core-2.10.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/jackson-databind-2.10.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/jcl-over-slf4j-1.7.30.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/jna-5.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

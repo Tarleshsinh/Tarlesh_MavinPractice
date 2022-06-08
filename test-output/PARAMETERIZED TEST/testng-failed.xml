@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [PARAMETERIZED TEST]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="First ParameterTest(failed)">
+    <parameter name="password" value="Selenium@123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://rediff.com"/>
+    <parameter name="username" value="seleniumpanda@rediffmail.com"/>
+    <classes>
+      <class name="ParameterPassing.parameterTest">
+        <methods>
+          <include name="redifflogintest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ParameterPassing.parameterTest -->
+    </classes>
+  </test> <!-- First ParameterTest(failed) -->
+</suite> <!-- Failed suite [PARAMETERIZED TEST] -->

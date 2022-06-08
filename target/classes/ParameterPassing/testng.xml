@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PARAMETERIZED TEST">
+  <test name="First ParameterTest">
+      <parameter name="browser" value="chrome"/>
+      <parameter name="url" value="https://rediff.com"/>
+      <parameter name="username" value="seleniumpanda@rediffmail.com"/>
+      <parameter name="password" value="Selenium@123"/>
+     
+       
+      <classes>
+      <class name="ParameterPassing.parameterTest"/>
+      </classes>
+  </test> <!-- Test -->
+  </suite> <!--  -->
