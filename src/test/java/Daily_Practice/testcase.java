@@ -37,7 +37,7 @@ public class testcase {
 		driver.findElement(By.xpath("//a[@class='rd_logout']")).click();
 		
 		
-		driver.quit();
+		driver.close();
 		
 		softassert.assertAll();
 		
