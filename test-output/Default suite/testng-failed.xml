@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="softAssert_TestNG.softassertpractice1">
+      <class name="MouseHoverAction.mouse_hover">
         <methods>
-          <include name="test1"/>
-          <include name="test2"/>
+          <include name="mousehoveropencart"/>
         </methods>
-      </class> <!-- softAssert_TestNG.softassertpractice1 -->
+      </class> <!-- MouseHoverAction.mouse_hover -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -8,8 +8,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import testBase.TestBase;
 
-public class TestNG_Framework2 {
+public class TestNG_Framework2 extends TestBase {
 
 	public static WebDriver diver;
 	private static ChromeDriver driver;
@@ -25,7 +26,7 @@ public class TestNG_Framework2 {
 		
 	}
 	// group by is use to define groups in test 
-	@Test(priority=1, groups="username")
+	@Test(priority=1, groups={"smoke"})
 	public void enterusername () {
 		
 		driver.findElement(By.xpath("//input[@id='login1']")).sendKeys("seleniumpanda@rediff.com");

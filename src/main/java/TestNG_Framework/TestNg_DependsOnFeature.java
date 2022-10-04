@@ -5,8 +5,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import testBase.TestBase;
 
-public class TestNg_DependsOnFeature {
+public class TestNg_DependsOnFeature extends TestBase {
 
 	public static WebDriver diver;
 	private static ChromeDriver driver;

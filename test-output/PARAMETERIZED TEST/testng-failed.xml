@@ -14,4 +14,17 @@
       </class> <!-- ParameterPassing.parameterTest -->
     </classes>
   </test> <!-- First ParameterTest(failed) -->
+  <test thread-count="5" name="second ParameterTest(failed)">
+    <parameter name="password" value="Selenium@123"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://rediff.com"/>
+    <parameter name="username" value="seleniumpanda@rediffmail.com"/>
+    <classes>
+      <class name="ParameterPassing.parameterTest">
+        <methods>
+          <include name="redifflogintest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ParameterPassing.parameterTest -->
+    </classes>
+  </test> <!-- second ParameterTest(failed) -->
 </suite> <!-- Failed suite [PARAMETERIZED TEST] -->

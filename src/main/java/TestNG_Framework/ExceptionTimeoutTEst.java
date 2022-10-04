@@ -1,8 +1,11 @@
 package TestNG_Framework;
 
+import org.junit.Assert;
 import org.testng.annotations.Test;
 
-public class ExceptionTimeoutTEst {
+import testBase.TestBase;
+
+public class ExceptionTimeoutTEst extends TestBase {
 
 //@Test(invocationTimeOut=2000,expectedExceptions=NumberFormatException.class)
 public void infiniteloop() {
@@ -14,9 +17,13 @@ public void infiniteloop() {
 }
 	
 @Test(expectedExceptions=NumberFormatException.class)
-public void test1() {
+public void test1() throws Exception {
 	String a= "100A";
 	Integer.parseInt(a);
+	log(a);
+	Thread.sleep(3000);
+	log(a);
+	Assert.assertTrue(false);
 }
 	
 	

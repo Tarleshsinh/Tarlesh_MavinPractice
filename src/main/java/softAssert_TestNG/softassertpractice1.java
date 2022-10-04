@@ -10,10 +10,11 @@ SoftAssert softassert= new SoftAssert();
 	public void test1() {
 		
 		String trisha= "Tarlesh";
-		Assert.assertTrue(trisha.contains("kamini"), "Name dosesent match");
+		//Assert.assertTrue(trisha.contains("Tarlesh"), "Name dosesent match");
+		Assert.assertTrue(trisha.contains(null));
 		
 		
-		//softassert.assertAll();
+		softassert.assertAll();
 	}
 	
 	@Test

@@ -3,6 +3,7 @@ package ParameterPassing;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -15,17 +16,30 @@ public class parameterTest {
 	SoftAssert softassert= new SoftAssert();
 	
 	@Test
-	@Parameters({"browser","url","username","password",})
+	@Parameters({"browser","url","username","password"})
 	public void redifflogintest(String browser, String url, String username, String password) {
-		if (browser.equals("chrome")) {
+		if (browser.equals("chrome")) { 
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		}else if (browser.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver= new FirefoxDriver();
+		}else if (browser.equals("Edge")) {
+				WebDriverManager.edgedriver().setup();
+				driver= new EdgeDriver();
+		} else if (browser.equals("safari")) {
+			WebDriverManager.edgedriver().setup();
+			driver= new EdgeDriver();
 		}
+		
+		
 		driver.manage().window().maximize();
 		driver.get(url);
+		driver.getTitle();
+		System.out.println("This is a Title of Page");
+		
+	
+		
 		
 		softassert.assertTrue(driver.findElement(By.xpath("//a[@class='signin']")).isEnabled());
 		driver.findElement(By.xpath("//a[@class='signin']")).click();
@@ -36,15 +50,16 @@ public class parameterTest {
 		softassert.assertTrue(driver.findElement(By.xpath("//input[@id='password']")).isDisplayed());
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(password);
 		
-		softassert.assertEquals(driver.findElement(By.xpath("//input[@class='signinbtn']")),true);
+		softassert.assertTrue(driver.findElement(By.xpath("//input[@class='signinbtn']")).isDisplayed());
 		driver.findElement(By.xpath("//input[@class='signinbtn']")).click();
 		
+		softassert.assertTrue(driver.findElement(By.xpath("//a[@class='rd_logout']")).isDisplayed());
+		driver.findElement(By.xpath("//a[@class='rd_logout']")).click();
 		
-		
-		
-		//softassert.assertAll();
 		
 		driver.quit();
+		
+		softassert.assertAll();
 		
 	}
 	

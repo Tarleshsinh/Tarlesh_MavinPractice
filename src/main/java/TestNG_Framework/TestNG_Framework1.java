@@ -10,7 +10,9 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestNG_Framework1 {
+import testBase.TestBase;
+
+public class TestNG_Framework1 extends TestBase {
 	//pre condition annotation starts with before 
 	@BeforeSuite//1
 	public void setup () {
