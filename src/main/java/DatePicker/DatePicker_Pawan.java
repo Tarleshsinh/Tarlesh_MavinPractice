@@ -21,7 +21,7 @@ public void pawanDatePicker() {
 	driver.manage().window().maximize();
 	driver.get("https://www.redbus.in/");
 	
-	String year = "2025";
+	String year = "2023";
 	String month = "July";
 	String date = "10";
 	
@@ -48,7 +48,11 @@ public void pawanDatePicker() {
 			ele.click();
 			break;
 		}
+	
+	
+	
 	}
+	driver.close();
 }
 	
 	

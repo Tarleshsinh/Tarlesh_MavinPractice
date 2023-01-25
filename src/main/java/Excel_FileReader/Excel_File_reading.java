@@ -22,7 +22,7 @@ Xls_Reader xls= new Xls_Reader(path);
 		String data1 =xls.getCellData("Tarlesh", "Username", 3);
 		System.out.println(data1);
 		
-		String data2 =xls.getCellData("Tarlesh", "Password", 3);
+		String data2 =xls.getCellData("Tarlesh", "Browser", 5);
 		System.out.println(data2);
 		
 	}

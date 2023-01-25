@@ -32,6 +32,7 @@ public class Keyboard_Actions {
 		Thread.sleep(2000);
 		
 		act.sendKeys(Keys.BACK_SPACE);
+		Thread.sleep(1000);
 		
 		
 		

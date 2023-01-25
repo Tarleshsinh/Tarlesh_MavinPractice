@@ -36,6 +36,7 @@ public void GoogleAutoComplete () {
 		if(text.equals("recliners for kids")) {
 			search.sendKeys(Keys.ENTER);
 			break;
+			
 		}
 	}
 	while(!text.isEmpty());

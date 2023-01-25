@@ -42,11 +42,12 @@ public void ExplicitwaitPawan () {
 	Actions act= new Actions(driver);
 	act.moveToElement(login).moveToElement(signin).click().perform();
 	
-	Assert.assertTrue(driver.findElement(By.xpath("//label[contains(text(),'E-mail address or mobile phone number')]")).isDisplayed());
+	Assert.assertTrue(driver.findElement(By.xpath("//input[@id='ap_email']")).isDisplayed());
 	driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys("tarlesh_parmar@yahoo.com");
 	driver.findElement(By.xpath("//input[@id='continue']")).click();
 	driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("1234eryd");
 	driver.quit();
+	
 	
 
 

@@ -25,7 +25,7 @@ driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(2000));
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
 
 driver.get("https://www.google.com");
-driver.findElement(By.xpath("//input[@name='q'and @class = 'gLFyf gsfi']")).sendKeys("switzerlandholiday Package");
+driver.findElement(By.xpath("//input[@name='q']")).sendKeys("switzerlandholiday Package");
 Thread.sleep(2000);
 
 List<WebElement>list= driver.findElements(By.xpath("//li[@class='sbct']//div[@class='eIPGRd']//div[1]/span"));

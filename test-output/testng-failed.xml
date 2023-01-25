@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MouseHoverAction.mouse_hover">
+      <class name="CSS_Value_Validate_Text_Colour.How_To_Verify_The_Element_colour">
         <methods>
-          <include name="mousehoveropencart"/>
+          <include name="verifycolour"/>
         </methods>
-      </class> <!-- MouseHoverAction.mouse_hover -->
+      </class> <!-- CSS_Value_Validate_Text_Colour.How_To_Verify_The_Element_colour -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

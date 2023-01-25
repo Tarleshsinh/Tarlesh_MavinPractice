@@ -16,7 +16,7 @@ public class PrimeNumberNaveen {
 		return true;
 	}
 	
-	public static void getprimenumbers(int num) {
+	public  void getprimenumbers(int num) {
 		for (int i=2; i<=num; i++) {
 			if (primenumber(i)) 
 				System.out.println(i + "This is a prime Number ");
@@ -26,8 +26,8 @@ public class PrimeNumberNaveen {
 
 	public static void main(String[] args) {
 	
-		getprimenumbers(100);
-		//System.out.println(primenumber(5));
+		//getprimenumbers(100);
+		System.out.println(primenumber(3));
 		//System.out.println(primenumber(12));
 			
 		}

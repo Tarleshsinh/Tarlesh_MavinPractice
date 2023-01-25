@@ -61,7 +61,7 @@ public WebDriver driver;
 	else 
 		System.out.println("Text not copied ");
 	
-	driver.quit();
+	//driver.quit();
 	
 	
 	
