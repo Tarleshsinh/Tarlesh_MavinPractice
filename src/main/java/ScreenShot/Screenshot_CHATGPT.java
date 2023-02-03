@@ -35,7 +35,7 @@ public class Screenshot_CHATGPT {
     } catch (Exception e) {
       e.printStackTrace();
       
-      driver.quit();
+      driver.close();
     }
   }
 }
