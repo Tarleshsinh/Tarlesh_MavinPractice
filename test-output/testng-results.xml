@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-27T18:52:16 EST" name="Default suite" finished-at="2023-01-27T18:52:43 EST" duration-ms="27252">
+  <suite started-at="2023-02-04T13:16:09 EST" name="Default suite" finished-at="2023-02-04T13:16:18 EST" duration-ms="9017">
     <groups>
     </groups>
-    <test started-at="2023-01-27T18:52:16 EST" name="Default test" finished-at="2023-01-27T18:52:43 EST" duration-ms="27252">
-      <class name="MouseHoverAction.mouse_hover">
-        <test-method signature="mousehoveropencart()[pri:0, instance:MouseHoverAction.mouse_hover@7bab3f1a]" started-at="2023-01-27T18:52:16 EST" name="mousehoveropencart" finished-at="2023-01-27T18:52:43 EST" duration-ms="27000" status="PASS">
+    <test started-at="2023-02-04T13:16:09 EST" name="Default test" finished-at="2023-02-04T13:16:18 EST" duration-ms="9017">
+      <class name="CheckBox_handle.checkBox_handle">
+        <test-method signature="Select_checkbox()[pri:0, instance:CheckBox_handle.checkBox_handle@7bab3f1a]" started-at="2023-02-04T13:16:09 EST" name="Select_checkbox" finished-at="2023-02-04T13:16:18 EST" duration-ms="8960" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mousehoveropencart -->
-      </class> <!-- MouseHoverAction.mouse_hover -->
+        </test-method> <!-- Select_checkbox -->
+      </class> <!-- CheckBox_handle.checkBox_handle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

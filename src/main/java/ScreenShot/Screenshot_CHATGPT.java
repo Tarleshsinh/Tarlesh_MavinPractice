@@ -24,7 +24,7 @@ public class Screenshot_CHATGPT {
 	  WebDriverManager.chromedriver().setup();
 	  driver = new ChromeDriver();
 	  driver.manage().window().maximize();
-	  driver.get("https://www.amazon.com");
+	  driver.get("https://www.google.com");
 	  
     try {
       Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
