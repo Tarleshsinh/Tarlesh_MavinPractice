@@ -2,16 +2,72 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-04T13:16:09 EST" name="Default suite" finished-at="2023-02-04T13:16:18 EST" duration-ms="9017">
+  <suite started-at="2023-02-06T23:38:16 EST" name="Default suite" finished-at="2023-02-06T23:38:17 EST" duration-ms="994">
     <groups>
     </groups>
-    <test started-at="2023-02-04T13:16:09 EST" name="Default test" finished-at="2023-02-04T13:16:18 EST" duration-ms="9017">
-      <class name="CheckBox_handle.checkBox_handle">
-        <test-method signature="Select_checkbox()[pri:0, instance:CheckBox_handle.checkBox_handle@7bab3f1a]" started-at="2023-02-04T13:16:09 EST" name="Select_checkbox" finished-at="2023-02-04T13:16:18 EST" duration-ms="8960" status="PASS">
+    <test started-at="2023-02-06T23:38:16 EST" name="Default test" finished-at="2023-02-06T23:38:17 EST" duration-ms="994">
+      <class name="TestNG_Framework.ExceptionTimeoutTEst">
+        <test-method is-config="true" signature="init(org.testng.ITestResult)[pri:0, instance:TestNG_Framework.ExceptionTimeoutTEst@4310d43]" started-at="2023-02-06T23:38:16 EST" name="init" finished-at="2023-02-06T23:38:17 EST" duration-ms="449" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=ExceptionTimeoutTEst.test1()[pri:0, instance:TestNG_Framework.ExceptionTimeoutTEst@4310d43] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Select_checkbox -->
-      </class> <!-- CheckBox_handle.checkBox_handle -->
+        </test-method> <!-- init -->
+        <test-method signature="test1()[pri:0, instance:TestNG_Framework.ExceptionTimeoutTEst@4310d43]" started-at="2023-02-06T23:38:17 EST" name="test1" finished-at="2023-02-06T23:38:17 EST" duration-ms="6" status="PASS">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "100A"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "100A"
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+at java.base/java.lang.Integer.parseInt(Integer.java:668)
+at java.base/java.lang.Integer.parseInt(Integer.java:786)
+at TestNG_Framework.ExceptionTimeoutTEst.test1(ExceptionTimeoutTEst.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="exiting()[pri:0, instance:TestNG_Framework.ExceptionTimeoutTEst@4310d43]" started-at="2023-02-06T23:38:17 EST" name="exiting" finished-at="2023-02-06T23:38:17 EST" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exiting -->
+      </class> <!-- TestNG_Framework.ExceptionTimeoutTEst -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

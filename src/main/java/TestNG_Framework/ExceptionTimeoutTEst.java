@@ -24,6 +24,7 @@ public void test1() throws Exception {
 	Thread.sleep(3000);
 	log(a);
 	Assert.assertTrue(false);
+	System.out.println(a);
 }
 	
 	
