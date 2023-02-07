@@ -73,7 +73,7 @@ public static void rightclick () throws Exception {
 	//driver.switchTo().alert().accept(); 
 	Alert alert = driver.switchTo().alert();
 	alert.accept();
-	driver.quit();
+	driver.close();
 }
 	
 }
