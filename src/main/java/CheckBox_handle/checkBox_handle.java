@@ -74,6 +74,7 @@ public void Select_checkbox() throws Exception {
 	
 	
 	driver.quit();
+	driver.findElement(By.xpath(""));
 	
 	
 	
