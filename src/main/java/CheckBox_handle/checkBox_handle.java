@@ -73,7 +73,7 @@ public void Select_checkbox() throws Exception {
 	//}
 	
 	
-	//driver.quit();
+	driver.quit();
 	
 	
 	
