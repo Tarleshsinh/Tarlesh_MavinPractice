@@ -75,7 +75,7 @@ public void Select_checkbox() throws Exception {
 	
 	driver.quit();
 
-	driver.findElement(By.xpath(""));
+	driver.findElement(By.xpath("//label[normalize-space()='Selenium Webdriver']"));
 
 	
 	
