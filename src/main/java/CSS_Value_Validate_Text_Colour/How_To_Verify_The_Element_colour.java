@@ -39,7 +39,7 @@ public class How_To_Verify_The_Element_colour {
 		
 		Assert.assertTrue(Hexavalue.contains("#006dcc"));
 		
-		driver.close();
+		driver.quit();
 		
 		
 	}
