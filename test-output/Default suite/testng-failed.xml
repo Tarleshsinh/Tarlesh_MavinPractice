@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CheckBox_handle.DemoQA_multipleCheckbox">
+      <class name="handling_Frame.HandlingFrame_Pawan">
         <methods>
-          <include name="Multiple_checkbox"/>
+          <include name="handleframe"/>
         </methods>
-      </class> <!-- CheckBox_handle.DemoQA_multipleCheckbox -->
+      </class> <!-- handling_Frame.HandlingFrame_Pawan -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

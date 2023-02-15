@@ -23,6 +23,7 @@ public void iframe() {
 	driver.get("https://demo.automationtesting.in/Frames.html");
 	driver.findElement(By.xpath("//a[normalize-space()='Iframe with in an Iframe']")).click();
 	driver.switchTo().frame("singleframe");
+	driver.quit();
 }
 	
 }

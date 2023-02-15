@@ -4,9 +4,18 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.StringWriter;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -21,7 +30,7 @@ import org.xml.sax.SAXException;
 
 public class XmlToExcelConverter {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         String xmlFilePath = "C:/Users/Admin/Desktop/Sarthak Selenium/Actual.XML"; // Replace with your own XML file path
         String excelFilePath = "C:/Users/Admin/Desktop/Coverted_File/1.xlsx"; // Replace with your own Excel file path
 
@@ -29,6 +38,9 @@ public class XmlToExcelConverter {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document document = builder.parse(new FileInputStream(new File(xmlFilePath)));
+            
+          
+            
             
             // Create a new workbook in Excel format
             Workbook workbook = new XSSFWorkbook();
@@ -65,6 +77,10 @@ public class XmlToExcelConverter {
                             
                             // Set the value of the cell to the text content of the "value" element
                             cell.setCellValue(valueElement.getTextContent());
+                            
+                            
+
+
                         }
                     }
                 }
@@ -76,9 +92,13 @@ public class XmlToExcelConverter {
             }
             
             System.out.println("Conversion complete.");
+            System.out.println("Number of data elements: " + dataList.getLength());
+            
             
         } catch (ParserConfigurationException | SAXException | IOException e) {
             e.printStackTrace();
+            
+            
         }
     }
 }
