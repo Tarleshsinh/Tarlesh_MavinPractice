@@ -48,7 +48,7 @@ public void Multiple_checkbox() throws Exception {
 	//softassert.assertTrue(driver.findElement(By.xpath("//span[@class='text-success' and contains(text(),'desktop')]")).isDisplayed());
 	 //String text =driver.findElement(By.xpath("//span[@class='text-success' and contains(text(),'desktop')]")).getText();
 	//System.out.println("This is the text----------" +text);
-	//driver.quit();
+	driver.quit();
 	
 	softassert.assertAll();
 
