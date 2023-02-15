@@ -24,9 +24,18 @@ public class Sukumar {
 	driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("HDMI splitter");
 	driver.findElement(By.xpath("//input[@id='nav-search-submit-button']")).click();
 		
+
+
+
 		driver.quit();
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> d40c63d658c99fd1eacbe7e0758dc2434f45756a
 		
+
+
 		
 		
 	}
