@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="softAssert_TestNG.softassertpractice1">
+      <class name="handling_Frame.IframeHandling">
         <methods>
-          <include name="test1"/>
+          <include name="iframe"/>
         </methods>
-      </class> <!-- softAssert_TestNG.softassertpractice1 -->
+      </class> <!-- handling_Frame.IframeHandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
