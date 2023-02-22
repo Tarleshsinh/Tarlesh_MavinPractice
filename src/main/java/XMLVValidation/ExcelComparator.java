@@ -12,8 +12,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelComparator {
 
     public static void main(String[] args) throws IOException {
-        String file1Path = "C:/Users/Admin/Desktop/EXcel_File_Compare/Employee+Sample+Data/Actual Employee Sample Data.xlsx"; // Replace with your own file path
-        String file2Path = "C:/Users/Admin/Desktop/EXcel_File_Compare/Employee+Sample+Data/Expected Employee Sample Data -.xlsx"; // Replace with your own file path
+        String file1Path = "C:/Users/Admin/Desktop/File_Compare/Excel_compare_Files/Expected.XLSX"; // Replace with your own file path
+        String file2Path = "C:/Users/Admin/Desktop/File_Compare/Excel_compare_Files/Actual.XLSX"; // Replace with your own file path
         
      // Create file input streams for both files
         FileInputStream file1Stream = new FileInputStream(new File(file1Path));
