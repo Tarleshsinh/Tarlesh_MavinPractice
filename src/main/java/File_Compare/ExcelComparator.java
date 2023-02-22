@@ -33,7 +33,7 @@ public class ExcelComparator {
     Workbook workbook = WorkbookFactory.create(inputStream);
     inputStream.close();
     return workbook;
-  }
+  } 
 
   public static boolean compareExcelFiles(Workbook file1, Workbook file2) {
     int numberOfSheets = file1.getNumberOfSheets();
