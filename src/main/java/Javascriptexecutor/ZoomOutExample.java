@@ -9,6 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -18,6 +19,8 @@ public WebDriver driver;
     public static void main(String[] args) throws Exception {
 
        WebDriverManager.chromedriver().setup();
+       ChromeOptions co = new ChromeOptions();
+		co.addArguments("--remote-allow-origins=*");
        
         // Create an instance of the Chrome driver
         WebDriver driver = new ChromeDriver();

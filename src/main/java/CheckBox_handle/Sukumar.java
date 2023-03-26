@@ -23,19 +23,11 @@ public class Sukumar {
 		
 	driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys("HDMI splitter");
 	driver.findElement(By.xpath("//input[@id='nav-search-submit-button']")).click();
-		
+	driver.quit();
 
-
-
-		driver.quit();
-
-		
-
-
-		
+	
 		
 	}
-	
 	
 	
 }

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="handling_Frame.HandlingFrame_Pawan">
+      <class name="CheckBox_handle.Sukumar">
         <methods>
-          <include name="handleframe"/>
+          <include name="method"/>
         </methods>
-      </class> <!-- handling_Frame.HandlingFrame_Pawan -->
+      </class> <!-- CheckBox_handle.Sukumar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
