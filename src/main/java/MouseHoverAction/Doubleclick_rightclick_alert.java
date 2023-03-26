@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -20,7 +21,9 @@ public static WebDriver driver;
 public static void doubleclick() {
 
 	WebDriverManager.chromedriver().setup();
-	driver= new ChromeDriver();
+	ChromeOptions co = new ChromeOptions();
+	co.addArguments("--remote-allow-origins=*");
+	driver= new ChromeDriver(co);
 	driver.manage().window().maximize();
 	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 	driver.manage().deleteAllCookies();
@@ -39,7 +42,10 @@ public static void doubleclick() {
 @Test
 public static void rightclick () throws Exception {
 	WebDriverManager.chromedriver().setup();
-	driver= new ChromeDriver();
+	ChromeOptions co = new ChromeOptions();
+	co.addArguments("--remote-allow-origins=*");
+	driver= new ChromeDriver(co);
+	
 	driver.manage().window().maximize();
 	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20)); 
 	driver.manage().deleteAllCookies();
@@ -57,7 +63,9 @@ public static void rightclick () throws Exception {
 		  
 	  
 	  WebDriverManager.chromedriver().setup();
-		driver= new ChromeDriver();
+	  ChromeOptions co = new ChromeOptions();
+		co.addArguments("--remote-allow-origins=*");
+		driver= new ChromeDriver(co);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		driver.manage().deleteAllCookies();

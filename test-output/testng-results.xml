@@ -2,21 +2,21 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-24T22:05:10 EDT" name="Default suite" finished-at="2023-03-24T22:05:19 EDT" duration-ms="8778">
+  <suite started-at="2023-03-26T16:36:06 EDT" name="Default suite" finished-at="2023-03-26T16:36:09 EDT" duration-ms="3403">
     <groups>
     </groups>
-    <test started-at="2023-03-24T22:05:10 EDT" name="Default test" finished-at="2023-03-24T22:05:19 EDT" duration-ms="8778">
-      <class name="CheckBox_handle.Sukumar">
-        <test-method signature="method()[pri:0, instance:CheckBox_handle.Sukumar@36916eb0]" started-at="2023-03-24T22:05:10 EDT" name="method" finished-at="2023-03-24T22:05:19 EDT" duration-ms="8589" status="FAIL">
+    <test started-at="2023-03-26T16:36:06 EDT" name="Default test" finished-at="2023-03-26T16:36:09 EDT" duration-ms="3403">
+      <class name="CSS_Value_Validate_Text_Colour.How_To_Verify_The_Element_colour">
+        <test-method signature="verifycolour()[pri:0, instance:CSS_Value_Validate_Text_Colour.How_To_Verify_The_Element_colour@3cebbb30]" started-at="2023-03-26T16:36:06 EDT" name="verifycolour" finished-at="2023-03-26T16:36:09 EDT" duration-ms="3330" status="FAIL">
           <exception class="org.openqa.selenium.remote.http.ConnectionFailedException">
             <message>
-              <![CDATA[Unable to establish websocket connection to http://localhost:49323/devtools/browser/949db612-598e-46f4-bc10-c7f3294a56ab
+              <![CDATA[Unable to establish websocket connection to http://localhost:56466/devtools/browser/c1e74537-82b6-4c9a-8e20-1e01089027c7
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
 System info: host: 'DESKTOP-VT2BQ7B', ip: '192.168.2.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:49323/devtools/browser/949db612-598e-46f4-bc10-c7f3294a56ab
+              <![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:56466/devtools/browser/c1e74537-82b6-4c9a-8e20-1e01089027c7
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
 System info: host: 'DESKTOP-VT2BQ7B', ip: '192.168.2.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: driver.version: ChromeDriver
@@ -30,7 +30,7 @@ at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:122)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
 at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:48)
-at CheckBox_handle.Sukumar.method(Sukumar.java:19)
+at CSS_Value_Validate_Text_Colour.How_To_Verify_The_Element_colour.verifycolour(How_To_Verify_The_Element_colour.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -64,8 +64,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.remote.http.ConnectionFailedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method -->
-      </class> <!-- CheckBox_handle.Sukumar -->
+        </test-method> <!-- verifycolour -->
+      </class> <!-- CSS_Value_Validate_Text_Colour.How_To_Verify_The_Element_colour -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
