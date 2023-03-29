@@ -23,7 +23,7 @@ driver.manage().window().maximize();
 
 JavascriptExecutor js = (JavascriptExecutor) driver;
 WebElement element = driver.findElement(By.id("nav-logo-sprites"));
-js.executeScript("arguments[0].setAttribute('style', 'border: 2px solid violet;');", element);
+js.executeScript("arguments[0].setAttribute('style', 'border: 2px solid green;');", element);
 	
 		//driver.quit();
 	}

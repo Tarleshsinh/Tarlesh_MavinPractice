@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.Color;
 import org.testng.annotations.Test;
 
@@ -19,7 +20,9 @@ public class How_To_Verify_The_Element_colour {
 	public void verifycolour () {
 		
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		ChromeOptions co = new ChromeOptions();
+		co.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver(co);
 		driver.manage().window().maximize();
 		driver.get("https://www.blazedemo.com");
 		WebElement B=driver.findElement(By.xpath("//input[@class='btn btn-primary']"));

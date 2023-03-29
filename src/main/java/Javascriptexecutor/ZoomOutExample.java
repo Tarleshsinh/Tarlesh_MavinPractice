@@ -23,7 +23,7 @@ public WebDriver driver;
 		co.addArguments("--remote-allow-origins=*");
        
         // Create an instance of the Chrome driver
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(co);
 
         // Navigate to the webpage
         driver.get("https://www.amazon.com");
