@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="JavaScriptAlert.blockPermissionBasePopup">
         <methods>
           <include name="Block_permissionBasePopup_Pawan"/>
         </methods>
       </class> <!-- JavaScriptAlert.blockPermissionBasePopup -->
+=======
+      <class name="handling_Frame.IframeHandling">
+        <methods>
+          <include name="iframe"/>
+        </methods>
+      </class> <!-- handling_Frame.IframeHandling -->
+>>>>>>> Branch_1
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -66,6 +67,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- Block_permissionBasePopup_Pawan -->
       </class> <!-- JavaScriptAlert.blockPermissionBasePopup -->
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-16T22:55:55 EST" name="Default suite" finished-at="2023-02-16T22:56:05 EST" duration-ms="10200">
+    <groups>
+    </groups>
+    <test started-at="2023-02-16T22:55:55 EST" name="Default test" finished-at="2023-02-16T22:56:05 EST" duration-ms="10200">
+      <class name="CheckBox_handle.checkBox_handle">
+        <test-method signature="Select_checkbox()[pri:0, instance:CheckBox_handle.checkBox_handle@7bab3f1a]" started-at="2023-02-16T22:55:55 EST" name="Select_checkbox" finished-at="2023-02-16T22:56:05 EST" duration-ms="10143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Select_checkbox -->
+      </class> <!-- CheckBox_handle.checkBox_handle -->
+>>>>>>> Branch_1
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
