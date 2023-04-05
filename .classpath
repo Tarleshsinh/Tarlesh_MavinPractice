@@ -60,14 +60,5 @@
 	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/jna-5.8.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Admin/Desktop/Sarthak Selenium/Jarfiles/slf4j-api-1.7.36.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="C:/Users/Admin/.m2/repository/org/apache/pdfbox/pdfbox/2.0.22/pdfbox-2.0.22.jar" sourcepath="C:/Users/Admin/.m2/repository/org/apache/pdfbox/pdfbox/2.0.22/pdfbox-2.0.22-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.apache.pdfbox"/>
-			<attribute name="maven.artifactId" value="pdfbox"/>
-			<attribute name="maven.version" value="2.0.22"/>
-			<attribute name="maven.scope" value="compile"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
