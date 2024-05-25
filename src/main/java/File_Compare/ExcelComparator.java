@@ -1,6 +1,5 @@
 package File_Compare;
 
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import org.apache.poi.ss.usermodel.Cell;
@@ -27,17 +26,13 @@ public class ExcelComparator {
       e.printStackTrace();
     }
   }
-
+  
   private static Workbook readExcelFile(String filePath) throws IOException {
     FileInputStream inputStream = new FileInputStream(filePath);
     Workbook workbook = WorkbookFactory.create(inputStream);
     inputStream.close();
     return workbook;
-<<<<<<< HEAD
-  } 
-=======
   }
->>>>>>> Branch_1
 
   public static boolean compareExcelFiles(Workbook file1, Workbook file2) {
     int numberOfSheets = file1.getNumberOfSheets();
@@ -81,6 +76,13 @@ public class ExcelComparator {
             if (cell1.getNumericCellValue() != cell2.getNumericCellValue()) {
               System.out.println("Mismatched value in cell: [" + j + "," + k + "]");
               System.out.println("Expected value: " + cell1.getNumericCellValue());
-              System.out.println("Actual value: ")
-              
-            
+              System.out.println("Actual value: " + cell2.getNumericCellValue());
+              return false;
+            }
+          }
+        }
+      }
+    }
+    return true;
+  }
+}

@@ -7,6 +7,8 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
@@ -16,19 +18,23 @@ public class Autosuggestion_googlesearch {
 public WebDriver driver;
 
 
-@Test(invocationCount=3)
+@Test
 public void googlesearch () throws Exception {
-WebDriverManager.firefoxdriver().setup();
-driver= new FirefoxDriver();
-driver.manage().window().maximize();
-driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(2000));
-driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
+	ChromeOptions options = new ChromeOptions();
+    // Add any necessary options here
+    options.addArguments("--remote-allow-origins=*");
+    //options.addArguments("--start-maximized"); // Maximize window
+    options.addArguments("--disable-extensions"); // Disable extensions
+    System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Desktop\\Sarthak Selenium\\Browsers drivers\\chromedriver.exe");
+    WebDriver driver = new ChromeDriver(options);
+    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20)); // Change the duration to 20 seconds
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); // Change the duration to 20 seconds
+    driver.manage().deleteAllCookies();
+    driver.get("https://www.google.com");
+    driver.findElement(By.xpath("//textarea[@id='APjFqb']")).sendKeys("switzerlandholiday Package");
+Thread.sleep(2000); 
 
-driver.get("https://www.google.com");
-driver.findElement(By.xpath("//input[@name='q']")).sendKeys("switzerlandholiday Package");
-Thread.sleep(2000);
-
-List<WebElement>list= driver.findElements(By.xpath("//li[@class='sbct']//div[@class='eIPGRd']//div[1]/span"));
+List<WebElement>list= driver.findElements(By.xpath("//div[@id='jZ2SBf']//div[1]//span[1]"));
 	System.out.println("Size of Autosuggestion list------" + list.size());
 	
 	for(WebElement switzerlandpkg:list)

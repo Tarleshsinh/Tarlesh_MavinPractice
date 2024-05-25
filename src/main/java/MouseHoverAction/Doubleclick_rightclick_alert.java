@@ -34,9 +34,6 @@ public static void doubleclick() {
 	Assert.assertTrue(driver.findElement(By.xpath("//p[@id='doubleClickMessage']")).isDisplayed());
 	driver.close();
 	
-	
-	
-	
 }
 
 @Test

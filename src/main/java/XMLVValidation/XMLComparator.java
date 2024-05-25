@@ -42,7 +42,7 @@ public class XMLComparator {
     }
 
     private static List<String> compareNode(Node expectedNode, Node actualNode) {
-        List<String> results = new ArrayList<>();
+        List<String> results = new ArrayList<String>();
 
         // Check if the node name is the same
         if (!expectedNode.getNodeName().equals(actualNode.getNodeName())) {

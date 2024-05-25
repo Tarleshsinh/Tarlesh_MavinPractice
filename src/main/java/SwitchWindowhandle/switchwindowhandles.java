@@ -11,6 +11,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -22,10 +23,16 @@ public class switchwindowhandles {
 	public static void main(String[] args) throws Exception {
 		
 		
-		
-		WebDriverManager.chromedriver().setup();
-		driver= new ChromeDriver();
-		driver.manage().window().maximize();
+		ChromeOptions options = new ChromeOptions();
+	    // Add any necessary options here
+	    options.addArguments("--remote-allow-origins=*");
+	    //options.addArguments("--start-maximized"); // Maximize window
+	    options.addArguments("--disable-extensions"); // Disable extensions
+	    System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Desktop\\Sarthak Selenium\\Browsers drivers\\chromedriver.exe");
+	    WebDriver driver = new ChromeDriver(options);
+	    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20)); // Change the duration to 20 seconds
+	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); // Change the duration to 20 seconds
+	    driver.manage().deleteAllCookies();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		
 		driver.findElement(By.xpath("//img[@alt='LinkedIn OrangeHRM group']")).click(); 
@@ -34,6 +41,7 @@ public class switchwindowhandles {
 		driver.findElement(By.xpath("//img[@alt='OrangeHRM on youtube']")).click();
 		String parentwindow =driver.getWindowHandle();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		
 		
 		//driver.findElement(By.xpath("//span[text()='Automated Web Testing']")).click();
 		//WebElement automated = driver.findElement(By.xpath("//span[normalize-space()='Automated Testing Tools']"));

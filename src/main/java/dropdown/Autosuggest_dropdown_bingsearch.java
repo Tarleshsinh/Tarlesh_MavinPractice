@@ -8,9 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Autosuggest_dropdown_bingsearch {
 public WebDriver driver;
@@ -19,22 +18,30 @@ public WebDriver driver;
 
 
 @Test
-public void autosuggest_Bing () {
-	WebDriverManager.chromedriver().setup();
-	driver= new ChromeDriver();
-	driver.manage().window().maximize();
-	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(2000));
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2000));
-	driver.manage().deleteAllCookies();
-	driver.get("https://www.bing.com/");
-	driver.findElement(By.xpath("//input[@id='sb_form_q' and @class='sb_form_q']")).sendKeys("Selenium");
+public void autosuggest_Bing () throws InterruptedException {
+	//WebDriverManager.chromedriver().setup();
 	
-	List<WebElement>list= driver.findElements(By.xpath("//li[@class='sa_sg']//span"));
+    ChromeOptions options = new ChromeOptions();
+    // Add any necessary options here
+    options.addArguments("--remote-allow-origins=*");
+    options.addArguments("--start-maximized"); // Maximize window
+    options.addArguments("--disable-extensions"); // Disable extensions
+    System.setProperty("webdriver.chrome.driver", "C:\\Users\\Admin\\Desktop\\Sarthak Selenium\\Browsers drivers\\chromedriver.exe");
+    WebDriver driver = new ChromeDriver(options);
+    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20)); // Change the duration to 20 seconds
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); // Change the duration to 20 seconds
+    driver.manage().deleteAllCookies();
+
+    driver.get("https://www.bing.com/");
+	driver.findElement(By.xpath("//textarea[@id='sb_form_q']")).sendKeys("Selenium");
+	
+	List<WebElement>list= driver.findElements(By.xpath("//span[@class='sa_tm_text']//strong"));
 	System.out.println("This is the size of list----"+list.size());
-	
+	Thread.sleep(2000);
+
 	for(WebElement listitem:list)
 	{
-		if (listitem.getText().equals("selenium download")) {
+		if (listitem.getText().contains("selenium download")) {
 			listitem.click();
 			break;
 		}

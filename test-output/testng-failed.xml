@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="JavaScript_Executor.ZoomOUT_ZoomIn_NavennAutomation">
+      <class name="dropdown.Autosuggest_dropdown_bingsearch">
         <methods>
-          <include name="ZOOMOUT"/>
+          <include name="autosuggest_Bing"/>
         </methods>
-      </class> <!-- JavaScript_Executor.ZoomOUT_ZoomIn_NavennAutomation -->
+      </class> <!-- dropdown.Autosuggest_dropdown_bingsearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
