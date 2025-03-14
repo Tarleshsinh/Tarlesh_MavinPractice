@@ -35,6 +35,7 @@ public void ExplicitwaitPawan () {
 	//driver.findElement(By.xpath("//button[@id='loginbutton']"));
 	
 	WebElement element= mywait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[contains(text(),'Amazon.ca: Low Prices – Fast Shipping – Millions o')]")));
+	
 	element.click();
 	WebElement login= driver.findElement(By.xpath("//span[@id='nav-link-accountList-nav-line-1']"));
 	WebElement signin=driver.findElement(By.xpath("//div[@id='nav-flyout-ya-signin']/child::a/child::span"));
